@@ -10,10 +10,16 @@
             background-color: #f8f9fa;
             font-family: 'Arial', sans-serif;
         }
-        .time-card {
+        .title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff; /* Branding color */
+            margin-top: 20px;
+        }
+        .time-card, .service-card {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            margin-top: 50px;
+            margin-top: 30px;
         }
         .card-title {
             font-size: 1.5rem;
@@ -21,20 +27,46 @@
         }
         .card-text {
             font-size: 1.25rem;
-            color: #007bff;
+            color: #333;
         }
     </style>
 </head>
 <body>
 
 <div class="container text-center">
-    <h1 class="mt-5">Bluegrass Branding Co.</h1>
+    <h1 class="title">Bluegrass Branding Co.</h1>
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card time-card">
                 <div class="card-body">
                     <h5 class="card-title">Current User Time</h5>
                     <p class="card-text" id="currentTime">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card service-card">
+                <div class="card-body">
+                    <h5 class="card-title">Our Services</h5>
+                    <ul class="card-text text-left">
+                        <li>Social Media Marketing</li>
+                        <li>Social Media Branding</li>
+                        <li>Custom Logos</li>
+                        <li>Custom Designs</li>
+                        <li>Custom Websites</li>
+                        <li>Website Design</li>
+                        <li>Social Media Advertising</li>
+                        <li>Social Media Page Creation</li>
+                        <li>Social Media Management</li>
+                        <li>Google Rankings</li>
+                        <li>SEO (Search Engine Optimization)</li>
+                        <li>Google Business Page Creation and Customization</li>
+                        <li>Custom SaaS Software for Small Business Owners</li>
+                    </ul>
+                    <p class="mt-3">We focus on working with other local small businesses and home businesses.</p>
                 </div>
             </div>
         </div>
