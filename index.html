@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluegrass Branding Co.</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .time-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .card-text {
+            font-size: 1.25rem;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center">
+    <h1 class="mt-5">Bluegrass Branding Co.</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card time-card">
+                <div class="card-body">
+                    <h5 class="card-title">Current User Time</h5>
+                    <p class="card-text" id="currentTime">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function updateTime() {
+        const now = new Date();
+        const options = { timeStyle: 'short', hour12: true };
+        document.getElementById('currentTime').textContent = now.toLocaleTimeString(undefined, options);
+    }
+    setInterval(updateTime, 1000);
+    updateTime(); // Initial call to display time immediately
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
